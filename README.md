@@ -12,7 +12,7 @@ This script allows you to perform the git pull --all command in each directory. 
 ```  
 python git_pull_all.py [directory_path]  
 ```  
-Replace [directory_path] with the optional path to the directory containing subdirectories where you want to execute git pull --all. If no directory path is provided, the script will operate in the current directory.
+6. Replace [directory_path] with the optional path to the directory containing subdirectories where you want to execute git pull --all. If no directory path is provided, the script will operate in the current directory.
 
 The script will iterate through each subdirectory, execute git pull --all command, and display the progress.
 
