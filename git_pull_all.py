@@ -17,9 +17,12 @@ def git_pull_all(base_dir):
         dir_path = os.path.join(base_dir, subdir)
         if os.path.exists(os.path.join(dir_path, '.git')):
             os.chdir(dir_path)
-            print("⚡ ➡️ Executing 'git pull --all' in directory:", dir_path)
+            print("⚡ ➡️ Executing 'git pull --all' in directory:", dir_path, "\n")
             os.system('git pull --all')
             os.chdir(base_dir)
+        else:
+            print("⏭️ Skipping directory:", dir_path, "- No '.git' directory found.\n")
+
 
     print("All 'git pull --all' operations completed.")
 
